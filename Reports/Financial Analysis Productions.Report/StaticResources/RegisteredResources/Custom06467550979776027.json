@@ -1,0 +1,19 @@
+{
+  "name": "Custom",
+  "textClasses": {
+    "label": {
+      "fontSize": 8,
+      "fontFace": "Arial"
+    }
+  },
+  "dataColors": [
+    "#8EAF68",
+    "#EAA03F",
+    "#618DA2",
+    "#447260",
+    "#70AD47",
+    "#744EC2",
+    "#D9B300",
+    "#D64550"
+  ]
+}

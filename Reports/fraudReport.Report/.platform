@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "fraudReport"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4f9bf26f-7a99-b573-4e88-7f3dc647ea89"
+  }
+}
