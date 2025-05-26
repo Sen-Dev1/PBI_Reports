@@ -1,0 +1,135 @@
+{
+  "config": "{\"version\":\"5.44\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU04\",\"version\":\"5.44\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "config": "{}",
+      "name": "Pod",
+      "type": 2
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU04",
+            "path": "BaseThemes/CY23SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "Terna09191345476486146.png",
+            "path": "Terna09191345476486146.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#26234F'\"}}}}}}}]},\"type\":1}",
+      "displayName": "ABC Analysis",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"212010e5ba33456c817a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":8000,\"width\":364.4778362133734,\"height\":116.36363636363637}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Terna09191345476486146.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 116.36,
+          "width": 364.48,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"24f259ba4a7890c7a36b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":129.82719759579265,\"z\":2000,\"width\":373.1329827197596,\"height\":230.8039068369647}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales.Product P1\"},{\"queryRef\":\"Sales.Top 90% ABC-Products\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Product P1\"},\"Name\":\"Sales.Product P1\",\"NativeReferenceName\":\"Product P1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Top 90% ABC-Products\"},\"Name\":\"Sales.Top 90% ABC-Products\",\"NativeReferenceName\":\"Top 90% ABC-Products\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Sales.Product P1\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Sales.Top 90% ABC-Products\"}}],\"columnHeaders\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 230.80,
+          "width": 373.13,
+          "x": 0.00,
+          "y": 129.83,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"461ae70902e6abc04ce7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":564.5078888054095,\"z\":0,\"width\":408.71525169045833,\"height\":154.83095416979714}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales.Product P1\"},{\"queryRef\":\"Sales.Country\"},{\"queryRef\":\"Sales.A Percentile Of Total\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Top 10% A-Product\"},\"Name\":\"Sales.A Percentile Of Total\",\"NativeReferenceName\":\"A Percentile Of Total\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Product P1\"},\"Name\":\"Sales.Product P1\",\"NativeReferenceName\":\"Product P1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Country\"},\"Name\":\"Sales.Country\",\"NativeReferenceName\":\"Country\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnFormatting\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Sales.Product P1\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Sales.A Percentile Of Total\"}}]}}}",
+          "filters": "[]",
+          "height": 154.83,
+          "width": 408.72,
+          "x": 0.00,
+          "y": 564.51,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"58ce179620066eba5538\",\"layouts\":[{\"id\":0,\"position\":{\"x\":864.5529676934636,\"y\":326.01051840721266,\"z\":3000,\"width\":415.44703230653647,\"height\":184.64312546957177}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales.Company\"},{\"queryRef\":\"Sales.Date\"},{\"queryRef\":\"ABC by Year.D-Product Per Company\"},{\"queryRef\":\"ABC by Year.ImprovedDClassCompany\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"ABC by Year\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Company\"},\"Name\":\"Sales.Company\",\"NativeReferenceName\":\"Company\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Date\"},\"Name\":\"Sales.Date\",\"NativeReferenceName\":\"Date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"D-Product Per Company\"},\"Name\":\"ABC by Year.D-Product Per Company\",\"NativeReferenceName\":\"D-Product Per Company\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Improvement\"},\"Name\":\"ABC by Year.ImprovedDClassCompany\",\"NativeReferenceName\":\"ImprovedDClassCompany\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"D-Product Per Company\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Sales.Company\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"ABC by Year.D-Product Per Company\"}}],\"columnHeaders\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter66c34a9bae3a10c3689b\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sales\"}},\"Property\":\"ABC Class\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ABC Class\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'D'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 184.64,
+          "width": 415.45,
+          "x": 864.55,
+          "y": 326.01,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"7eec6bc5ad7da0332a02\",\"layouts\":[{\"id\":0,\"position\":{\"x\":864.5529676934636,\"y\":129.82719759579265,\"z\":6000,\"width\":415.44703230653647,\"height\":196.18332081142}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales.Company\"},{\"queryRef\":\"ABC by Year.D-Product Per Company\"},{\"queryRef\":\"ABC by Year.Company D Products Pct\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"ABC by Year\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"D-Product Per Company\"},\"Name\":\"ABC by Year.D-Product Per Company\",\"NativeReferenceName\":\"D-Product Per Company\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Company\"},\"Name\":\"Sales.Company\",\"NativeReferenceName\":\"Company\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"D Products Pct\"},\"Name\":\"ABC by Year.Company D Products Pct\",\"NativeReferenceName\":\"Company D Products Pct\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"D Products Pct\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"ABC by Year.D-Product Per Company\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"ABC by Year.Company D Products Pct\"}}],\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnHeaders\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 196.18,
+          "width": 415.45,
+          "x": 864.55,
+          "y": 129.83,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"96e2bda9b730e9a31e7b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":408.71525169045833,\"y\":510.6536438767844,\"z\":4000,\"width\":329.8572501878287,\"height\":208.68519909842226}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales.Product P1\"},{\"queryRef\":\"ABC by Year.ABC Class\"},{\"queryRef\":\"Sales.Top 50% AB-Product\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"ABC by Year\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Product P1\"},\"Name\":\"Sales.Product P1\",\"NativeReferenceName\":\"Product P1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ABC Class\"},\"Name\":\"ABC by Year.ABC Class\",\"NativeReferenceName\":\"ABC Class\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Top 50% AB-Product\"},\"Name\":\"Sales.Top 50% AB-Product\",\"NativeReferenceName\":\"Top 50% AB-Product\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Top 50% AB-Product\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}}}],\"columnFormatting\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Sales.Top 50% AB-Product\"}}]}}}",
+          "filters": "[{\"name\":\"Filter530233595959bcb6531b\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sales\"}},\"Property\":\"ABC Class\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ABC Class\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'A'\"}}],[{\"Literal\":{\"Value\":\"'B'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{}}]},\"isHiddenInViewMode\":false}]",
+          "height": 208.69,
+          "width": 329.86,
+          "x": 408.72,
+          "y": 510.65,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"b95d842f7abb71442004\",\"layouts\":[{\"id\":0,\"position\":{\"x\":738.5725018782871,\"y\":510.6536438767844,\"z\":5000,\"width\":541.427498121713,\"height\":208.68519909842226}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales.Company\"},{\"queryRef\":\"ABC by Year.D-Product Per Company\"},{\"queryRef\":\"Sales.Max DProduct Company\"},{\"queryRef\":\"Sales.Date\"},{\"queryRef\":\"ABC by Year.ABC Class\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"ABC by Year\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Company\"},\"Name\":\"Sales.Company\",\"NativeReferenceName\":\"Company\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"D-Product Per Company\"},\"Name\":\"ABC by Year.D-Product Per Company\",\"NativeReferenceName\":\"D-Product Per Company\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"D-Products % per Company\"},\"Name\":\"Sales.Max DProduct Company\",\"NativeReferenceName\":\"Max DProduct Company\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Date\"},\"Name\":\"Sales.Date\",\"NativeReferenceName\":\"Date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ABC Class\"},\"Name\":\"ABC by Year.ABC Class\",\"NativeReferenceName\":\"ABC Class\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"D-Products % per Company\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Sales.Company\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"ABC by Year.D-Product Per Company\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Sales.Max DProduct Company\"}},{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"ABC by Year.ABC Class\"}}],\"total\":[{\"properties\":{\"label\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnHeaders\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 208.69,
+          "width": 541.43,
+          "x": 738.57,
+          "y": 510.65,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"c7623d7b497ce3ae6d00\",\"layouts\":[{\"id\":0,\"position\":{\"x\":373.1329827197596,\"y\":129.82719759579265,\"z\":7000,\"width\":491.419984973704,\"height\":380.8264462809918}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sales.ABC Class\",\"active\":true},{\"queryRef\":\"Sales.Company\"}],\"Y\":[{\"queryRef\":\"CountNonNull(Sales.Product P1)\"},{\"queryRef\":\"Sales.Product Sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Product P1\"}},\"Function\":5},\"Name\":\"CountNonNull(Sales.Product P1)\",\"NativeReferenceName\":\"Count of Product P1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Product Sales\"},\"Name\":\"Sales.Product Sales\",\"NativeReferenceName\":\"Product Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ABC Class\"},\"Name\":\"Sales.ABC Class\",\"NativeReferenceName\":\"ABC Class\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Company\"},\"Name\":\"Sales.Company\",\"NativeReferenceName\":\"Company\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Product P1\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Product Sales by Class'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 380.83,
+          "width": 491.42,
+          "x": 373.13,
+          "y": 129.83,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"fd678c1f3d1c765143c8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":360.63110443275735,\"z\":1000,\"width\":373.1329827197596,\"height\":203.87678437265214}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales.Product P1\"},{\"queryRef\":\"Sales.Country\"},{\"queryRef\":\"Sales.Date\"},{\"queryRef\":\"Sales.D Percentile Of Total\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Country\"},\"Name\":\"Sales.Country\",\"NativeReferenceName\":\"Country\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Date\"},\"Name\":\"Sales.Date\",\"NativeReferenceName\":\"Date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Top 10% D-Product\"},\"Name\":\"Sales.D Percentile Of Total\",\"NativeReferenceName\":\"D Percentile Of Total\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Product P1\"},\"Name\":\"Sales.Product P1\",\"NativeReferenceName\":\"Product P1\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}}}],\"columnFormatting\":[{\"properties\":{\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Sales.Product P1\"}},{\"properties\":{\"styleTotal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}},\"selector\":{\"metadata\":\"Sales.D Percentile Of Total\"}}]}}}",
+          "filters": "[]",
+          "height": 203.88,
+          "width": 373.13,
+          "x": 0.00,
+          "y": 360.63,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

@@ -1,0 +1,1186 @@
+{
+  "config": "{\"version\":\"5.42\",\"themeCollection\":{},\"activeSectionIndex\":10,\"linguisticSchemaSyncVersion\":2,\"objects\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 1,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod"
+    },
+    {
+      "boundSection": "ReportSection7",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod1"
+    },
+    {
+      "boundSection": "ReportSection12",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod10"
+    },
+    {
+      "boundSection": "ReportSection2",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod2"
+    },
+    {
+      "boundSection": "ReportSection3",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod3"
+    },
+    {
+      "boundSection": "ReportSection1",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod4"
+    },
+    {
+      "boundSection": "ReportSection5",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod5"
+    },
+    {
+      "boundSection": "ReportSection6",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod6"
+    },
+    {
+      "boundSection": "ReportSection8",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod7"
+    },
+    {
+      "boundSection": "ReportSection10",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod8"
+    },
+    {
+      "boundSection": "ReportSection11",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod9"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "HierarchySlicer.css",
+            "path": "HierarchySlicer.css",
+            "type": 1
+          },
+          {
+            "name": "HierarchySlicer.js",
+            "path": "HierarchySlicer.js",
+            "type": 0
+          },
+          {
+            "name": "icon.png",
+            "path": "icon.png",
+            "type": 3
+          }
+        ],
+        "name": "HierarchySlicer1458836712039",
+        "type": 0
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"VisualContainer1\",\"target\":\"VisualContainer4\",\"type\":3},{\"source\":\"VisualContainer\",\"target\":\"VisualContainer3\",\"type\":2}]}",
+      "displayName": "Umsatzanalyse - Business Unit",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DEFAULTDIMENSIONS\"}},\"Property\":\"BusinessUnit\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BusinessUnit\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1}]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.189873417721518,\"y\":121.51898734177215,\"z\":0,\"width\":489.1139240506329,\"height\":300.75949367088606}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"Customers - OrderAccount.CityCountry Hierarchy.Country\"},{\"queryRef\":\"Customers - OrderAccount.CityCountry Hierarchy.StateCountry\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.CityCountry Hierarchy.CityCountry\"},{\"queryRef\":\"Customers - OrderAccount.CityCountry Hierarchy.ZipCodeCountry\"}],\"Series\":[{\"queryRef\":\"DefaultDimensions.BusinessUnit\"}],\"Size\":[{\"queryRef\":\"CUSTINVOICETRANS.Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BusinessUnit\"},\"Name\":\"DefaultDimensions.BusinessUnit\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Hierarchy\":\"Location Hierarchy\"}},\"Level\":\"Country\"},\"Name\":\"Customers - OrderAccount.CityCountry Hierarchy.Country\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Hierarchy\":\"Location Hierarchy\"}},\"Level\":\"StateCountry\"},\"Name\":\"Customers - OrderAccount.CityCountry Hierarchy.StateCountry\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Hierarchy\":\"Location Hierarchy\"}},\"Level\":\"CityCountry\"},\"Name\":\"Customers - OrderAccount.CityCountry Hierarchy.CityCountry\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Hierarchy\":\"Location Hierarchy\"}},\"Level\":\"ZipCodeCountry\"},\"Name\":\"Customers - OrderAccount.CityCountry Hierarchy.ZipCodeCountry\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Revenue\"}]},\"objects\":{\"mapControls\":[{\"properties\":{\"autoZoom\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 300.76,
+          "width": 489.11,
+          "x": 15.19,
+          "y": 121.52,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1092.6582278481012,\"y\":0,\"z\":2000,\"width\":187.34177215189874,\"height\":70.88607594936708}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Invoicedate.Date.Variation.Date Hierarchy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Date\"},\"Name\":\"Invoicedate.Date.Variation.Date Hierarchy.Year\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_53610f9b-6fc6-4056-8adb-fff43862289d\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2015L\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 70.89,
+          "width": 187.34,
+          "x": 1092.66,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":526.5822784810126,\"y\":145.82278481012656,\"z\":10000,\"width\":613.6708860759493,\"height\":544.8101265822785}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"DEFAULTDIMENSIONS.BusinessUnit\",\"active\":true},{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true}],\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz\"},{\"queryRef\":\"CUSTINVOICETRANS.Cost of Goods Sold\"},{\"queryRef\":\"CUSTINVOICETRANS.GrossProfit\"},{\"queryRef\":\"CUSTINVOICETRANS.GrossProfit %\"},{\"queryRef\":\"CUSTINVOICETRANS.YoY revenue growth %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CustomerGroups\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BusinessUnit\"},\"Name\":\"DEFAULTDIMENSIONS.BusinessUnit\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Umsatz\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Cost of Goods Sold\"},\"Name\":\"CUSTINVOICETRANS.Cost of Goods Sold\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"GrossProfit\"},\"Name\":\"CUSTINVOICETRANS.GrossProfit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"GrossProfit %\"},\"Name\":\"CUSTINVOICETRANS.GrossProfit %\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"YoY revenue growth %\"},\"Name\":\"CUSTINVOICETRANS.YoY revenue growth %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Umsatz\"}}}]}}}",
+          "height": 544.81,
+          "width": 613.67,
+          "x": 526.58,
+          "y": 145.82,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer11\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1141.26582278481,\"y\":428.3544303797468,\"z\":11000,\"width\":138.73417721518987,\"height\":187.34177215189874}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Customers - OrderAccount.Aktive Kunden\"},{\"queryRef\":\"Customers - OrderAccount.Aktive Kunden %\"},{\"queryRef\":\"Customers - OrderAccount.Kunden ohne Umsatz\"},{\"queryRef\":\"Customers - OrderAccount.Anzahl Kunden\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Anzahl Kunden\"},\"Name\":\"Customers - OrderAccount.Anzahl Kunden\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Kunden ohne Umsatz\"},\"Name\":\"Customers - OrderAccount.Kunden ohne Umsatz\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Aktive Kunden\"},\"Name\":\"Customers - OrderAccount.Aktive Kunden\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Aktive Kunden %\"},\"Name\":\"Customers - OrderAccount.Aktive Kunden %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Anzahl Kunden\"}}}]}}}",
+          "height": 187.34,
+          "width": 138.73,
+          "x": 1141.27,
+          "y": 428.35,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.015067406819984,\"y\":0,\"z\":3000,\"width\":578.588421887391,\"height\":84.25059476605868}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"UMSATZANALYSE / Business Unit\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"30pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 84.25,
+          "width": 578.59,
+          "x": 1.02,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16.202531645569618,\"y\":448.60759493670884,\"z\":1000,\"width\":132.65822784810126,\"height\":237.9746835443038}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"DefaultDimensions.BusinessUnit\",\"active\":true}],\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BusinessUnit\"},\"Name\":\"DefaultDimensions.BusinessUnit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Revenue\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BusinessUnit\"}}}]},\"objects\":{}}}",
+          "height": 237.97,
+          "width": 132.66,
+          "x": 16.20,
+          "y": 448.61,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":153.9240506329114,\"y\":446.5822784810126,\"z\":4000,\"width\":344.3037974683544,\"height\":263.2911392405063}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Invoicedate.MonthNameShort\",\"active\":true}],\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.Revenue\"}],\"Series\":[{\"queryRef\":\"DEFAULTDIMENSIONS.BusinessUnit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"MonthNameShort\"},\"Name\":\"Invoicedate.MonthNameShort\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BusinessUnit\"},\"Name\":\"DEFAULTDIMENSIONS.BusinessUnit\"}]},\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Scalar'\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DEFAULTDIMENSIONS\"}},\"Property\":\"BusinessUnit\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BusinessUnit\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0}]",
+          "height": 263.29,
+          "width": 344.30,
+          "x": 153.92,
+          "y": 446.58,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1140.253164556962,\"y\":311.8987341772152,\"z\":5000,\"width\":139.74683544303798,\"height\":102.27848101265822}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Anzahl Aufträge\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"},\"Name\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Anzahl Aufträge\"},\"Name\":\"CUSTINVOICETRANS.Anzahl Aufträge\"}]}}}",
+          "height": 102.28,
+          "width": 139.75,
+          "x": 1140.25,
+          "y": 311.90,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":735.1898734177215,\"y\":0,\"z\":6000,\"width\":124.55696202531645,\"height\":75.94936708860759}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.GrossProfit %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"GrossProfit %\"},\"Name\":\"CUSTINVOICETRANS.GrossProfit %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"GrossProfit %\"}}}]}}}",
+          "height": 75.95,
+          "width": 124.56,
+          "x": 735.19,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":593.4177215189873,\"y\":0,\"z\":7000,\"width\":144.81012658227849,\"height\":73.92405063291139}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"}}}]}}}",
+          "height": 73.92,
+          "width": 144.81,
+          "x": 593.42,
+          "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1140.253164556962,\"y\":160,\"z\":8000,\"width\":139.74683544303798,\"height\":143.79746835443038}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Revenue\"},{\"queryRef\":\"CUSTINVOICETRANS.Cost of Good Sold\"},{\"queryRef\":\"CUSTINVOICETRANS.GrossProfit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Cost of Goods Sold\"},\"Name\":\"CUSTINVOICETRANS.Cost of Good Sold\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"GrossProfit\"},\"Name\":\"CUSTINVOICETRANS.GrossProfit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Cost of Goods Sold\"}}}]}}}",
+          "height": 143.80,
+          "width": 139.75,
+          "x": 1140.25,
+          "y": 160.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":868.8607594936708,\"y\":0,\"z\":9000,\"width\":187.34177215189874,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.YoY revenue growth %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"YoY revenue growth %\"},\"Name\":\"CUSTINVOICETRANS.YoY revenue growth %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"YoY revenue growth %\"}}}]}}}",
+          "height": 80.00,
+          "width": 187.34,
+          "x": 868.86,
+          "y": 0.00,
+          "z": 9000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "CustomerAging",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTAGING\"}},\"Property\":\"StatRepInterval\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTAGING\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"StatRepInterval\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'30_60_90_180'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1}]",
+      "height": 720.00,
+      "name": "ReportSection1",
+      "ordinal": 6,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":128,\"z\":0,\"width\":767.9999999999999,\"height\":576}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(CUSTAGING.AgingPeriod1)\"},{\"queryRef\":\"Sum(CUSTAGING.AgingPeriod2)\"},{\"queryRef\":\"Sum(CUSTAGING.AgingPeriod3)\"},{\"queryRef\":\"Sum(CUSTAGING.AgingPeriod4)\"},{\"queryRef\":\"Sum(CUSTAGING.AgingPeriod5)\"},{\"queryRef\":\"CUSTAGING.TotalDueAmount\"},{\"queryRef\":\"CUSTAGING.RemainingCredit\"}],\"Rows\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.CustomerAccount\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTAGING\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"c2\",\"Entity\":\"CustomerGroups\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"30 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.AgingPeriod1)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"60 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.AgingPeriod2)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"90 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.AgingPeriod3)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"180 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.AgingPeriod4)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\">180 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.AgingPeriod5)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerAccount\"},\"Name\":\"Customers - OrderAccount.CustomerAccount\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TotalAmountDue\"},\"Name\":\"CUSTAGING.TotalDueAmount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"RemainingCredit\"},\"Name\":\"CUSTAGING.RemainingCredit\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Arithmetic\":{\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CreditLimit\"}},\"Function\":0}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CreditLimit\"}},\"Function\":0}},\"Scope\":[]}},\"Operator\":3}}}]},\"objects\":{\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"CUSTAGING.RemainingCredit\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}},\"value\":{\"Literal\":{\"Value\":\"20000D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#99e3dd'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CUSTAGING.RemainingCredit\"}}]}}}",
+          "filters": "[{\"name\":\"Filter\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTAGING\"}},\"Property\":\"TotalAmountDue\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTAGING\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TotalAmountDue\"}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0}]",
+          "height": 576.00,
+          "width": 768.00,
+          "x": 0.00,
+          "y": 128.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":3000,\"width\":480,\"height\":80}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Customer Aging\",\"textStyle\":{\"fontSize\":\"31.5pt\"}}]}]}}]}}}",
+          "height": 80.00,
+          "width": 480.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":800,\"y\":128,\"z\":1000,\"width\":304,\"height\":191.99999999999997}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Tooltips\":[{\"queryRef\":\"Min(Customers - OrderAccount.CustomerName)\"}],\"Y\":[{\"queryRef\":\"Sum(CUSTAGING.AgingPeriod1)\"},{\"queryRef\":\"Sum(CUSTAGING.AgingPeriod2)\"},{\"queryRef\":\"Sum(CUSTAGING.AgingPeriod3)\"},{\"queryRef\":\"Sum(CUSTAGING.AgingPeriod4)\"},{\"queryRef\":\"Sum(CUSTAGING.AgingPeriod5)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CUSTAGING\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerName\"}},\"Function\":3},\"Name\":\"Min(Customers - OrderAccount.CustomerName)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"30 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.AgingPeriod1)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"60 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.AgingPeriod2)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"90 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.AgingPeriod3)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"180 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.AgingPeriod4)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\">180 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.AgingPeriod5)\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Customer Aging by Interval'\"}}}}}]}}}",
+          "height": 192.00,
+          "width": 304.00,
+          "x": 800.00,
+          "y": 128.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1120,\"y\":352,\"z\":4000,\"width\":144,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTAGING.TotalDueAmount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTAGING\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TotalAmountDue\"},\"Name\":\"CUSTAGING.TotalDueAmount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TotalAmountDue\"}}}]}}}",
+          "height": 80.00,
+          "width": 144.00,
+          "x": 1120.00,
+          "y": 352.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1120,\"y\":128,\"z\":5000,\"width\":160,\"height\":208}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(CUSTAGING.30 days)\"},{\"queryRef\":\"Sum(CUSTAGING.60 days)\"},{\"queryRef\":\"Sum(CUSTAGING.90 days)\"},{\"queryRef\":\"Sum(CUSTAGING.180 days)\"},{\"queryRef\":\"Sum(CUSTAGING.>180 days)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTAGING\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"30 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.30 days)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"60 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.60 days)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"90 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.90 days)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"180 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.180 days)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\">180 days\"}},\"Function\":0},\"Name\":\"Sum(CUSTAGING.>180 days)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"30 days\"}},\"Function\":0}}}]}}}",
+          "height": 208.00,
+          "width": 160.00,
+          "x": 1120.00,
+          "y": 128.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":784,\"y\":448,\"z\":2000,\"width\":496,\"height\":256}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"Customers - OrderAccount.CustomerAccount\",\"active\":true}],\"Values\":[{\"queryRef\":\"CUSTAGING.TotalDueAmount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CUSTAGING\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerAccount\"},\"Name\":\"Customers - OrderAccount.CustomerAccount\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TotalAmountDue\"},\"Name\":\"CUSTAGING.TotalDueAmount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerAccount\"}}}]}}}",
+          "filters": "[{\"name\":\"Filter\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTAGING\"}},\"Property\":\"TotalAmountDue\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTAGING\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TotalAmountDue\"}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0}]",
+          "height": 256.00,
+          "width": 496.00,
+          "x": 784.00,
+          "y": 448.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Customer Profitability",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection10",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":16,\"z\":0,\"width\":536,\"height\":80}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Customer Profitability\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"30pt\"}}]}]}}]}}}",
+          "height": 80.00,
+          "width": 536.00,
+          "x": 32.00,
+          "y": 16.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1104,\"y\":8,\"z\":1000,\"width\":176,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Profitincrease %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profitincrease %\"},\"Name\":\"CUSTINVOICETRANS.Profitincrease %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"}}}]}}}",
+          "height": 80.00,
+          "width": 176.00,
+          "x": 1104.00,
+          "y": 8.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":952,\"y\":0,\"z\":10000,\"width\":160,\"height\":96}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Profit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profit\"},\"Name\":\"CUSTINVOICETRANS.Profit\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profit\"}}}]}}}",
+          "height": 96.00,
+          "width": 160.00,
+          "x": 952.00,
+          "y": 0.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":208,\"z\":3000,\"width\":200,\"height\":80}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CustomerGroups\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 80.00,
+          "width": 200.00,
+          "x": 24.00,
+          "y": 208.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":800,\"y\":8,\"z\":4000,\"width\":144,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"}}}]}}}",
+          "height": 80.00,
+          "width": 144.00,
+          "x": 800.00,
+          "y": 8.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":8,\"z\":2000,\"width\":160,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Anzahl Aufträge\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Anzahl Aufträge\"},\"Name\":\"CUSTINVOICETRANS.Anzahl Aufträge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Anzahl Aufträge\"}}}]}}}",
+          "height": 80.00,
+          "width": 160.00,
+          "x": 640.00,
+          "y": 8.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.121506682867558,\"y\":114.60510328068044,\"z\":5000,\"width\":202.089914945322,\"height\":83.9854191980559}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Company\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Company\"},\"Name\":\"CUSTINVOICETRANS.Company\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 83.99,
+          "width": 202.09,
+          "x": 20.12,
+          "y": 114.61,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":304,\"z\":6000,\"width\":200,\"height\":96}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Invoicedate.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"},\"Name\":\"Invoicedate.Year\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"}}}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2015L\"}}]]}}}]}}}}]}}}",
+          "height": 96.00,
+          "width": 200.00,
+          "x": 24.00,
+          "y": 304.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":232,\"y\":376,\"z\":7000,\"width\":1048,\"height\":344}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.QTY LY\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatz LY\"},{\"queryRef\":\"CUSTINVOICETRANS.Profit LY\"},{\"queryRef\":\"Sum(CUSTINVOICETRANS.QTY)\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatz\"},{\"queryRef\":\"CUSTINVOICETRANS.Profit\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatzsteigerung\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"},{\"queryRef\":\"CUSTINVOICETRANS.Profitincrease\"},{\"queryRef\":\"CUSTINVOICETRANS.Profitincrease %\"}],\"Rows\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.CustomerName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"CustomerGroups\",\"Type\":0},{\"Name\":\"c2\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Umsatz\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"CustomerName\"},\"Name\":\"Customers - OrderAccount.CustomerName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz LY\"},\"Name\":\"CUSTINVOICETRANS.Umsatz LY\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung\"},\"Name\":\"CUSTINVOICETRANS.Umsatzsteigerung\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung %\"},\"Name\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"QTY\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.QTY)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"QTY LY\"},\"Name\":\"CUSTINVOICETRANS.QTY LY\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profit\"},\"Name\":\"CUSTINVOICETRANS.Profit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profit LY\"},\"Name\":\"CUSTINVOICETRANS.Profit LY\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profitincrease %\"},\"Name\":\"CUSTINVOICETRANS.Profitincrease %\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profitincrease\"},\"Name\":\"CUSTINVOICETRANS.Profitincrease\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profit\"}}}]},\"objects\":{\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Umsatzsteigerung\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CUSTINVOICETRANS.Umsatzsteigerung\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Auftragswertveränderung\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CUSTINVOICETRANS.Auftragswertveränderung\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Auftragswertveränderung %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CUSTINVOICETRANS.Auftragswertveränderung %\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Profitincrease %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CUSTINVOICETRANS.Profitincrease %\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Profitincrease\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CUSTINVOICETRANS.Profitincrease\"}}],\"rowTotal\":[{\"properties\":{\"applyToHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnTotal\":[{\"properties\":{\"applyToHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 344.00,
+          "width": 1048.00,
+          "x": 232.00,
+          "y": 376.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":240,\"y\":120,\"z\":8000,\"width\":576,\"height\":232}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.CustomerName\"}],\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.Profitincrease %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"CustomerGroups\",\"Type\":0},{\"Name\":\"c2\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"CustomerName\"},\"Name\":\"Customers - OrderAccount.CustomerName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profitincrease %\"},\"Name\":\"CUSTINVOICETRANS.Profitincrease %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerGroup\"}}}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"Profitincrease %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#e6e6e6'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}},\"value\":{\"Literal\":{\"Value\":\"1D\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Median'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}},\"Function\":6}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}}},\"selector\":{\"metadata\":\"CUSTINVOICETRANS.Umsatzsteigerung %\",\"id\":\"1\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Median'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Profitincrease %\"}},\"Function\":6}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}}},\"selector\":{\"metadata\":\"CUSTINVOICETRANS.Profitincrease %\",\"id\":\"2\"}}],\"y1AxisReferenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Ziel'\"}}},\"value\":{\"expr\":{\"Literal\":{\"Value\":\"0.1D\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C80F'\"}}}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}},\"dataLabelColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C80F'\"}}}}}},\"selector\":{\"id\":\"1\"}}]}}}",
+          "height": 232.00,
+          "width": 576.00,
+          "x": 240.00,
+          "y": 120.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":832,\"y\":112,\"z\":9000,\"width\":432,\"height\":264}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"Customers - OrderAccount.Country\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.CityCountry\"},{\"queryRef\":\"Customers - OrderAccount.ZipCodeCountry\"}],\"Size\":[{\"queryRef\":\"CUSTINVOICETRANS.Profit\"}],\"Tooltips\":[{\"queryRef\":\"CUSTINVOICETRANS.Profitincrease %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CityCountry\"},\"Name\":\"Customers - OrderAccount.CityCountry\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Country\"},\"Name\":\"Customers - OrderAccount.Country\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ZipCodeCountry\"},\"Name\":\"Customers - OrderAccount.ZipCodeCountry\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Profit\"},\"Name\":\"CUSTINVOICETRANS.Profit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Profitincrease %\"},\"Name\":\"CUSTINVOICETRANS.Profitincrease %\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"Profitincrease %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"mapControls\":[{\"properties\":{\"autoZoom\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 264.00,
+          "width": 432.00,
+          "x": 832.00,
+          "y": 112.00,
+          "z": 9000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Customer Profitability 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection11",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":16,\"z\":0,\"width\":536,\"height\":80}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Customer Profitability\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"30pt\"}}]}]}}]}}}",
+          "height": 80.00,
+          "width": 536.00,
+          "x": 32.00,
+          "y": 16.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1104,\"y\":8,\"z\":1000,\"width\":176,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Profitincrease %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profitincrease %\"},\"Name\":\"CUSTINVOICETRANS.Profitincrease %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"}}}]}}}",
+          "height": 80.00,
+          "width": 176.00,
+          "x": 1104.00,
+          "y": 8.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":208,\"z\":3000,\"width\":200,\"height\":80}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CustomerGroups\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 80.00,
+          "width": 200.00,
+          "x": 24.00,
+          "y": 208.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":800,\"y\":8,\"z\":4000,\"width\":144,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"}}}]}}}",
+          "height": 80.00,
+          "width": 144.00,
+          "x": 800.00,
+          "y": 8.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":8,\"z\":2000,\"width\":160,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Anzahl Aufträge\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Anzahl Aufträge\"},\"Name\":\"CUSTINVOICETRANS.Anzahl Aufträge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Anzahl Aufträge\"}}}]}}}",
+          "height": 80.00,
+          "width": 160.00,
+          "x": 640.00,
+          "y": 8.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.121506682867558,\"y\":114.60510328068044,\"z\":5000,\"width\":202.089914945322,\"height\":83.9854191980559}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Company\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Company\"},\"Name\":\"CUSTINVOICETRANS.Company\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 83.99,
+          "width": 202.09,
+          "x": 20.12,
+          "y": 114.61,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":304,\"z\":6000,\"width\":200,\"height\":96}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Invoicedate.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"},\"Name\":\"Invoicedate.Year\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"}}}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2015L\"}}]]}}}]}}}}]}}}",
+          "height": 96.00,
+          "width": 200.00,
+          "x": 24.00,
+          "y": 304.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":952,\"y\":0,\"z\":8000,\"width\":160,\"height\":96}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Profit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profit\"},\"Name\":\"CUSTINVOICETRANS.Profit\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profit\"}}}]}}}",
+          "height": 96.00,
+          "width": 160.00,
+          "x": 952.00,
+          "y": 0.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":232,\"y\":136,\"z\":7000,\"width\":1048,\"height\":584}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.CustomerName\"}],\"Tooltips\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"},{\"queryRef\":\"Sum(CUSTINVOICETRANS.QTY)\"}],\"Size\":[{\"queryRef\":\"CUSTINVOICETRANS.Profit\"}],\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}],\"X\":[{\"queryRef\":\"CUSTINVOICETRANS.Profitincrease %\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"CustomerGroups\",\"Type\":0},{\"Name\":\"c2\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"CustomerName\"},\"Name\":\"Customers - OrderAccount.CustomerName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profit\"},\"Name\":\"CUSTINVOICETRANS.Profit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profitincrease %\"},\"Name\":\"CUSTINVOICETRANS.Profitincrease %\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"QTY\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.QTY)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung %\"},\"Name\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Profit\"}}}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"Profitincrease %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#afb5b6'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}},\"value\":{\"Literal\":{\"Value\":\"1D\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"bubbles\":[{\"properties\":{\"bubbleSize\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Median'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}},\"Function\":6}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}}},\"selector\":{\"metadata\":\"CUSTINVOICETRANS.Umsatzsteigerung %\",\"id\":\"1\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Percentile 10%'\"}}},\"value\":{\"expr\":{\"Percentile\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}},\"K\":0.1}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}}},\"selector\":{\"metadata\":\"CUSTINVOICETRANS.Umsatzsteigerung %\",\"id\":\"2\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Percentile 90%'\"}}},\"value\":{\"expr\":{\"Percentile\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}},\"K\":0.9}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}}},\"selector\":{\"metadata\":\"CUSTINVOICETRANS.Umsatzsteigerung %\",\"id\":\"3\"}}],\"fillPoint\":[{\"properties\":{\"style\":{\"expr\":{\"Literal\":{\"Value\":\"'Fill only'\"}}}}}]}}}",
+          "height": 584.00,
+          "width": 1048.00,
+          "x": 232.00,
+          "y": 136.00,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Sales Performance",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filter1\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Invoicedate\"}},\"Property\":\"Is Current Day of the Year or Before\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Invoicedate\"}},\"Property\":\"RelativeYear\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"RelativeYear\"}},\"Right\":{\"Literal\":{\"Value\":\"-4D\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1},{\"name\":\"Filter2\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Invoicedate\"}},\"Property\":\"RelativeDay\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"RelativeDay\"}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+      "height": 720.00,
+      "name": "ReportSection12",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":16,\"z\":0,\"width\":536,\"height\":80}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Sales Performance\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"30pt\"}}]}]}}]}}}",
+          "height": 80.00,
+          "width": 536.00,
+          "x": 32.00,
+          "y": 16.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1088,\"y\":16,\"z\":4000,\"width\":168,\"height\":96}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CustomerGroups\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 96.00,
+          "width": 168.00,
+          "x": 1088.00,
+          "y": 16.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":512,\"y\":600,\"z\":6000,\"width\":160,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz QTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz QTD\"},\"Name\":\"CUSTINVOICETRANS.Umsatz QTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"}}}]}}}",
+          "height": 80.00,
+          "width": 160.00,
+          "x": 512.00,
+          "y": 600.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer11\",\"layouts\":[{\"id\":0,\"position\":{\"x\":104,\"y\":600,\"z\":7000,\"width\":152,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz MTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz MTD\"},\"Name\":\"CUSTINVOICETRANS.Umsatz MTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"}}}]}}}",
+          "height": 80.00,
+          "width": 152.00,
+          "x": 104.00,
+          "y": 600.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer12\",\"layouts\":[{\"id\":0,\"position\":{\"x\":240,\"y\":584,\"z\":12000,\"width\":192,\"height\":112}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung %\"},\"Name\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung %\"}}}]}}}",
+          "height": 112.00,
+          "width": 192.00,
+          "x": 240.00,
+          "y": 584.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer13\",\"layouts\":[{\"id\":0,\"position\":{\"x\":672,\"y\":584,\"z\":13000,\"width\":184,\"height\":112}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung %\"},\"Name\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung %\"}}}]}}}",
+          "height": 112.00,
+          "width": 184.00,
+          "x": 672.00,
+          "y": 584.00,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer14\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1064,\"y\":584,\"z\":14000,\"width\":184,\"height\":112}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung %\"},\"Name\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung %\"}}}]},\"objects\":{\"labels\":[{\"properties\":{}}]}}}",
+          "height": 112.00,
+          "width": 184.00,
+          "x": 1064.00,
+          "y": 584.00,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer15\",\"layouts\":[{\"id\":0,\"position\":{\"x\":888,\"y\":16,\"z\":15000,\"width\":184,\"height\":80}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DEFAULTDIMENSIONS.BusinessUnit\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BusinessUnit\"},\"Name\":\"DEFAULTDIMENSIONS.BusinessUnit\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "height": 80.00,
+          "width": 184.00,
+          "x": 888.00,
+          "y": 16.00,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":920,\"y\":600,\"z\":5000,\"width\":136,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz YTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz YTD\"},\"Name\":\"CUSTINVOICETRANS.Umsatz YTD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"}}}]}}}",
+          "height": 80.00,
+          "width": 136.00,
+          "x": 920.00,
+          "y": 600.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":672,\"y\":16,\"z\":8000,\"width\":200,\"height\":88}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Company\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Company\"},\"Name\":\"CUSTINVOICETRANS.Company\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 88.00,
+          "width": 200.00,
+          "x": 672.00,
+          "y": 16.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":872,\"y\":208,\"z\":9000,\"width\":408,\"height\":344}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz YTD\"}],\"Series\":[{\"queryRef\":\"Invoicedate.Year\"}],\"Category\":[{\"queryRef\":\"Invoicedate.MonthNameShort\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz YTD\"},\"Name\":\"CUSTINVOICETRANS.Umsatz YTD\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"},\"Name\":\"Invoicedate.Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"MonthNameShort\"},\"Name\":\"Invoicedate.MonthNameShort\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C80F'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_53610f9b-6fc6-4056-8adb-fff43862289d\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2014L\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C80F'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Invoicedate\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2016L\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 344.00,
+          "width": 408.00,
+          "x": 872.00,
+          "y": 208.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":48,\"y\":208,\"z\":10000,\"width\":400,\"height\":344}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz MTD\"}],\"Category\":[{\"queryRef\":\"Invoicedate.Day\",\"active\":true}],\"Series\":[{\"queryRef\":\"Invoicedate.Year\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz MTD\"},\"Name\":\"CUSTINVOICETRANS.Umsatz MTD\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Day\"},\"Name\":\"Invoicedate.Day\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"},\"Name\":\"Invoicedate.Year\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C80F'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_53610f9b-6fc6-4056-8adb-fff43862289d\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2014L\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C80F'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Invoicedate\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2016L\"}}}}}]}}],\"categoryAxis\":[{\"properties\":{\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Scalar'\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Invoicedate\"}},\"Property\":\"Is Current Month\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Is Current Month\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"true\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1}]",
+          "height": 344.00,
+          "width": 400.00,
+          "x": 48.00,
+          "y": 208.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":456,\"y\":208,\"z\":11000,\"width\":400,\"height\":344}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Invoicedate.Week\",\"active\":true}],\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz QTD\"}],\"Series\":[{\"queryRef\":\"Invoicedate.Year\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz QTD\"},\"Name\":\"CUSTINVOICETRANS.Umsatz QTD\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Week\"},\"Name\":\"Invoicedate.Week\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"},\"Name\":\"Invoicedate.Year\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C80F'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_53610f9b-6fc6-4056-8adb-fff43862289d\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2014L\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C80F'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Invoicedate\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2016L\"}}}}}]}}],\"categoryAxis\":[{\"properties\":{\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Categorical'\"}}}}}],\"lineStyles\":[{\"properties\":{\"strokeLineJoin\":{\"expr\":{\"Literal\":{\"Value\":\"'round'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Invoicedate\"}},\"Property\":\"Is Current Quarter\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Is Current Quarter\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"true\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1}]",
+          "height": 344.00,
+          "width": 400.00,
+          "x": 456.00,
+          "y": 208.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":168,\"y\":144,\"z\":1000,\"width\":160,\"height\":40}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Month to Date\",\"textStyle\":{\"fontSize\":\"15pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 40.00,
+          "width": 160.00,
+          "x": 168.00,
+          "y": 144.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":568,\"y\":144,\"z\":2000,\"width\":160,\"height\":40}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Quarter to Date\",\"textStyle\":{\"fontSize\":\"15pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 40.00,
+          "width": 160.00,
+          "x": 568.00,
+          "y": 144.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":991.9999999999999,\"y\":144,\"z\":3000,\"width\":160,\"height\":40}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Year to Date\",\"textStyle\":{\"fontSize\":\"15pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 40.00,
+          "width": 160.00,
+          "x": 992.00,
+          "y": 144.00,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Kundenanalyse",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection2",
+      "ordinal": 7,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":564.3774781919112,\"y\":0,\"z\":0,\"width\":118.76288659793815,\"height\":79.17525773195877}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(CUSTINVOICETRANS.LINEAMOUNTMST)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.LINEAMOUNTMST)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}}}]}}}",
+          "height": 79.18,
+          "width": 118.76,
+          "x": 564.38,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":102.5218080888184,\"y\":120.79302141157812,\"z\":1000,\"width\":731.8636003172086,\"height\":325.83663758921494}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Series\":[{\"queryRef\":\"CustomerGroups.Kundengruppe\"}],\"Size\":[{\"queryRef\":\"Sum(CUSTINVOICETRANS.Umsatz)\"}],\"Category\":[{\"queryRef\":\"Customers - OrderAccount.Location Hierarchy.Country\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.Location Hierarchy.StateCountry\"},{\"queryRef\":\"Customers - OrderAccount.Location Hierarchy.CityCountry\"},{\"queryRef\":\"Customers - OrderAccount.Location Hierarchy.ZipCodeCountry\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"c2\",\"Entity\":\"CustomerGroups\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.Kundengruppe\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Umsatz)\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Hierarchy\":\"Location Hierarchy\"}},\"Level\":\"Country\"},\"Name\":\"Customers - OrderAccount.Location Hierarchy.Country\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Hierarchy\":\"Location Hierarchy\"}},\"Level\":\"StateCountry\"},\"Name\":\"Customers - OrderAccount.Location Hierarchy.StateCountry\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Hierarchy\":\"Location Hierarchy\"}},\"Level\":\"CityCountry\"},\"Name\":\"Customers - OrderAccount.Location Hierarchy.CityCountry\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Hierarchy\":\"Location Hierarchy\"}},\"Level\":\"ZipCodeCountry\"},\"Name\":\"Customers - OrderAccount.Location Hierarchy.ZipCodeCountry\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}}}]},\"objects\":{\"mapControls\":[{\"properties\":{\"autoZoom\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ccf1ee'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}}}}}}}]}}}",
+          "height": 325.84,
+          "width": 731.86,
+          "x": 102.52,
+          "y": 120.79,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1093.0337078651685,\"y\":0,\"z\":3000,\"width\":186.96629213483146,\"height\":70.80380293863439}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICEJOUR.INVOICEDATE.Variation.Date Hierarchy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICEJOUR\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"INVOICEDATE\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"CUSTINVOICEJOUR.INVOICEDATE.Variation.Date Hierarchy.Year\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_e3979d8e-ba9f-4d0d-bbc0-63bb04ba63bf\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2015L\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_e3979d8e-ba9f-4d0d-bbc0-63bb04ba63bf\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2015L\"}}}}},\"displayName\":\"2015\"}]}}",
+          "height": 70.80,
+          "width": 186.97,
+          "x": 1093.03,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.015067406819984,\"y\":0,\"z\":4000,\"width\":370.4996034892942,\"height\":84.25059476605868}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"UMSATZANALYSE\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"30pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 84.25,
+          "width": 370.50,
+          "x": 1.02,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":118.76288659793815,\"z\":5000,\"width\":94.40126883425853,\"height\":297.4147501982554}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.DATAAREAID\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Company\"},\"Name\":\"CUSTINVOICETRANS.DATAAREAID\"}]},\"objects\":{\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Company\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'usp2'\"}}],[{\"Literal\":{\"Value\":\"'uspi'\"}}],[{\"Literal\":{\"Value\":\"'usrt'\"}}],[{\"Literal\":{\"Value\":\"'usmf'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 297.41,
+          "width": 94.40,
+          "x": 0.00,
+          "y": 118.76,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":829.310071371927,\"y\":0,\"z\":6000,\"width\":185.75733544805712,\"height\":84.25059476605868}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"},\"Name\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"}}}]}}}",
+          "height": 84.25,
+          "width": 185.76,
+          "x": 829.31,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":104.55194290245836,\"y\":462.8707375099128,\"z\":2000,\"width\":725.7731958762887,\"height\":249.70658207771612}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"CustomerGroups.Description\"},{\"queryRef\":\"Customers - OrderAccount.Name\"},{\"queryRef\":\"Customers - OrderAccount.CustomerAccount\"},{\"queryRef\":\"Sum(CUSTINVOICETRANS.Umsatz)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"CustomerGroups\",\"Type\":0},{\"Name\":\"c2\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Umsatz)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.Description\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"CustomerName\"},\"Name\":\"Customers - OrderAccount.Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"CustomerAccount\"},\"Name\":\"Customers - OrderAccount.CustomerAccount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}}}]},\"objects\":{}}}",
+          "height": 249.71,
+          "width": 725.77,
+          "x": 104.55,
+          "y": 462.87,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":838.445678033307,\"y\":120.79302141157812,\"z\":7000,\"width\":434.4488501189532,\"height\":325.83663758921494}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(CUSTINVOICETRANS.Umsatz)\"}],\"Category\":[{\"queryRef\":\"DefaultDimensions.BusinessUnit\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Umsatz)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BusinessUnit\"},\"Name\":\"DefaultDimensions.BusinessUnit\"}]}}}",
+          "height": 325.84,
+          "width": 434.45,
+          "x": 838.45,
+          "y": 120.79,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":858.7470261697066,\"y\":495.35289452815226,\"z\":8000,\"width\":403.99682791435373,\"height\":224.3298969072165}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(CUSTINVOICETRANS.Umsatz)\"}],\"Category\":[{\"queryRef\":\"Invoicedate.MonthNameShort\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Umsatz)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"MonthNameShort\"},\"Name\":\"Invoicedate.MonthNameShort\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}}}]},\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Scalar'\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 224.33,
+          "width": 404.00,
+          "x": 858.75,
+          "y": 495.35,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":679.0800951625694,\"y\":0,\"z\":9000,\"width\":169.51625693893735,\"height\":82.22045995241872}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(CUSTINVOICETRANS.Auftrag)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"SalesOrderNumber\"}},\"Function\":2},\"Name\":\"CountNonNull(CUSTINVOICETRANS.Auftrag)\"}]}}}",
+          "height": 82.22,
+          "width": 169.52,
+          "x": 679.08,
+          "y": 0.00,
+          "z": 9000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"VisualContainer9\",\"target\":\"VisualContainer1\",\"type\":1}]}",
+      "displayName": "Umsatzanalyse - Kunde",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection3",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":537.1567436208992,\"height\":83.9854191980559}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"UMSATZANALYSE / Kunde\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"30pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 83.99,
+          "width": 537.16,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1104,\"y\":8,\"z\":2000,\"width\":176,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"},\"Name\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"}}}]}}}",
+          "height": 80.00,
+          "width": 176.00,
+          "x": 1104.00,
+          "y": 8.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.121506682867558,\"y\":114.60510328068044,\"z\":10000,\"width\":202.089914945322,\"height\":83.9854191980559}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Company\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Company\"},\"Name\":\"CUSTINVOICETRANS.Company\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 83.99,
+          "width": 202.09,
+          "x": 20.12,
+          "y": 114.61,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":272,\"y\":120,\"z\":0,\"width\":600,\"height\":352}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz\"}],\"Series\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\"}],\"Category\":[{\"queryRef\":\"Invoicedate.Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"Invoicedate.Date.Variation.Date Hierarchy.Quarter\",\"active\":true},{\"queryRef\":\"Invoicedate.Date.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"Invoicedate.Date.Variation.Date Hierarchy.Day\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"CustomerGroups\",\"Type\":0},{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Umsatz\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Invoicedate.Date.Variation.Date Hierarchy.Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"Invoicedate.Date.Variation.Date Hierarchy.Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Invoicedate.Date.Variation.Date Hierarchy.Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Invoicedate.Date.Variation.Date Hierarchy.Day\"}]},\"objects\":{\"categoryAxis\":[{\"properties\":{\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Categorical'\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 352.00,
+          "width": 600.00,
+          "x": 272.00,
+          "y": 120.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":589.6476306196842,\"y\":511.78614823815315,\"z\":4000,\"width\":292.19927095990283,\"height\":208.2138517618469}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Customers - OrderAccount.CustomerName\",\"active\":true}],\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerName\"},\"Name\":\"Customers - OrderAccount.CustomerName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Umsatz\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"},\"Name\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"}}}]},\"objects\":{\"categoryAxis\":[{\"properties\":{\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 10 Kunden'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Customers - OrderAccount\"}},\"Property\":\"CustomerName\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerName\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerName\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0}]",
+          "height": 208.21,
+          "width": 292.20,
+          "x": 589.65,
+          "y": 511.79,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":293.0741190765492,\"y\":510.0364520048603,\"z\":5000,\"width\":282.57594167679224,\"height\":209.96354799513975}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Customers - OrderAccount.CustomerName\",\"active\":true}],\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerName\"},\"Name\":\"Customers - OrderAccount.CustomerName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Umsatz\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"},\"Name\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"}}}]},\"objects\":{\"categoryAxis\":[{\"properties\":{\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Bottom 10 Kunden'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Customers - OrderAccount\"}},\"Property\":\"CustomerName\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerName\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"c\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerName\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0}]",
+          "height": 209.96,
+          "width": 282.58,
+          "x": 293.07,
+          "y": 510.04,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.87120291616039,\"y\":224.8359659781288,\"z\":6000,\"width\":199.46537059538275,\"height\":80.48602673147023}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CustomerGroups\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 80.49,
+          "width": 199.47,
+          "x": 21.87,
+          "y": 224.84,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":903.9999999999999,\"y\":128,\"z\":7000,\"width\":368,\"height\":584}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"Customers - OrderAccount.CustomerAccount\",\"active\":true}],\"Values\":[{\"queryRef\":\"Divide(CUSTINVOICETRANS.Umsatz, ScopedEval(CUSTINVOICETRANS.Umsatz, []))\"}],\"Tooltips\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerAccount\"},\"Name\":\"Customers - OrderAccount.CustomerAccount\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Umsatz\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Umsatz\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"Divide(CUSTINVOICETRANS.Umsatz, ScopedEval(CUSTINVOICETRANS.Umsatz, []))\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Umsatz\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Umsatz\"}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Customers - OrderAccount\"}},\"Property\":\"CustomerAccount\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerAccount\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0}]",
+          "height": 584.00,
+          "width": 368.00,
+          "x": 904.00,
+          "y": 128.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":944.0000000000001,\"y\":8,\"z\":8000,\"width\":144,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"}}}]}}}",
+          "height": 80.00,
+          "width": 144.00,
+          "x": 944.00,
+          "y": 8.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":768,\"y\":8,\"z\":3000,\"width\":160,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Anzahl Aufträge\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Anzahl Aufträge\"},\"Name\":\"CUSTINVOICETRANS.Anzahl Aufträge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Anzahl Aufträge\"}}}]}}}",
+          "height": 80.00,
+          "width": 160.00,
+          "x": 768.00,
+          "y": 8.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":27.9951397326853,\"y\":323.6938031591738,\"z\":9000,\"width\":180.21871202916162,\"height\":218.7120291616039}}],\"singleVisual\":{\"visualType\":\"HierarchySlicer1458836712039\",\"projections\":{\"Fields\":[{\"queryRef\":\"Invoicedate.Date.Variation.Date Hierarchy.Year\"},{\"queryRef\":\"Invoicedate.Date.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"Invoicedate.Date.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"Invoicedate.Date.Variation.Date Hierarchy.Day\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Invoicedate.Date.Variation.Date Hierarchy.Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"Invoicedate.Date.Variation.Date Hierarchy.Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Invoicedate.Date.Variation.Date Hierarchy.Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Invoicedate.Date.Variation.Date Hierarchy.Day\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Date\"}}}]},\"objects\":{\"general\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"filterValues\":{\"expr\":{\"Literal\":{\"Value\":\"'2014-0,2014-0_Qtr 1-1,2014-0_Qtr 1-1_January-2,2014-0_Qtr 1-1_February-2,2014-0_Qtr 1-1_March-2,2014-0_Qtr 2-1,2014-0_Qtr 2-1_April-2,2014-0_Qtr 2-1_May-2,2014-0_Qtr 2-1_June-2,2014-0_Qtr 3-1,2014-0_Qtr 3-1_July-2,2014-0_Qtr 3-1_August-2,2014-0_Qtr 3-1_September-2,2014-0_Qtr 4-1,2014-0_Qtr 4-1_October-2,2014-0_Qtr 4-1_November-2,2014-0_Qtr 4-1_December-2,2015-0,2015-0_Qtr 1-1,2015-0_Qtr 1-1_January-2,2015-0_Qtr 1-1_February-2,2015-0_Qtr 1-1_March-2,2015-0_Qtr 2-1,2015-0_Qtr 2-1_April-2,2015-0_Qtr 2-1_May-2,2015-0_Qtr 2-1_June-2,2015-0_Qtr 3-1,2015-0_Qtr 3-1_July-2,2015-0_Qtr 3-1_August-2,2015-0_Qtr 3-1_September-2,2015-0_Qtr 4-1,2015-0_Qtr 4-1_October-2,2015-0_Qtr 4-1_November-2,2015-0_Qtr 4-1_December-2'\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Or\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2014L\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2015L\"}}}}}}}]}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"title\":{\"expr\":{\"Literal\":{\"Value\":\"'Invoicedate'\"}}}}}]}}}",
+          "height": 218.71,
+          "width": 180.22,
+          "x": 28.00,
+          "y": 323.69,
+          "z": 9000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"VisualContainer11\",\"target\":\"VisualContainer3\",\"type\":1},{\"source\":\"VisualContainer\",\"target\":\"VisualContainer12\",\"type\":3}]}",
+      "displayName": "Umsatz in diesem Monat",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection5",
+      "ordinal": 8,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.04474272930649,\"y\":258.67263236390755,\"z\":0,\"width\":262.49067859806115,\"height\":77.31543624161074}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Invoicedate.RelativeMonth\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"RelativeMonth\"},\"Name\":\"Invoicedate.RelativeMonth\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"RelativeMonth\"}}}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"RelativeMonth\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"-15L\"}}]]}}}]}}}}]}}}",
+          "height": 77.32,
+          "width": 262.49,
+          "x": 20.04,
+          "y": 258.67,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":168,\"z\":1000,\"width\":256,\"height\":80}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Invoicedate.Year\"},{\"queryRef\":\"Invoicedate.MonthNameLong\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"},\"Name\":\"Invoicedate.Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"MonthNameLong\"},\"Name\":\"Invoicedate.MonthNameLong\"}]}}}",
+          "height": 80.00,
+          "width": 256.00,
+          "x": 24.00,
+          "y": 168.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":752,\"y\":440,\"z\":5000,\"width\":520,\"height\":272}},{\"id\":1,\"position\":{\"x\":0,\"y\":660,\"width\":324,\"height\":240}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Invoicedate.Date\"},{\"queryRef\":\"CUSTINVOICETRANS.SalesOrderNumber\"},{\"queryRef\":\"SalesOrderHeaders.SalesOrderStatus\"},{\"queryRef\":\"Sum(CUSTINVOICETRANS.Revenue)\"},{\"queryRef\":\"Sum(SALESLINE.SalesAmount)\"},{\"queryRef\":\"SALESLINE.OpenRevenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0},{\"Name\":\"s1\",\"Entity\":\"SalesOrderHeaders\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Date\"},\"Name\":\"Invoicedate.Date\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Revenue)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0},\"Name\":\"Sum(SALESLINE.SalesAmount)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"SalesOrderNumber\"},\"Name\":\"CUSTINVOICETRANS.SalesOrderNumber\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"SalesOrderStatus\"},\"Name\":\"SalesOrderHeaders.SalesOrderStatus\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"OpenRevenue\"},\"Name\":\"SALESLINE.OpenRevenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}}}]},\"objects\":{\"general\":[{\"properties\":{},\"selector\":{\"metadata\":\"Customers - OrderAccount.CustomerName\"}}]}}}",
+          "filters": "[{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"SALESLINE\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0},{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0}]",
+          "height": 272.00,
+          "width": 520.00,
+          "x": 752.00,
+          "y": 440.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer11\",\"layouts\":[{\"id\":0,\"position\":{\"x\":360,\"y\":440,\"z\":4000,\"width\":368,\"height\":256}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Details\":[{\"queryRef\":\"CUSTINVOICETRANS.SalesOrderNumber\"}],\"Values\":[{\"queryRef\":\"Sum(CUSTINVOICETRANS.Revenue)\"}],\"Tooltips\":[{\"queryRef\":\"Sum(SALESLINE.SalesAmount)\"},{\"queryRef\":\"SALESLINE.OpenRevenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"SalesOrderNumber\"},\"Name\":\"CUSTINVOICETRANS.SalesOrderNumber\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Revenue)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0},\"Name\":\"Sum(SALESLINE.SalesAmount)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"OpenRevenue\"},\"Name\":\"SALESLINE.OpenRevenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}}}]},\"objects\":{\"general\":[{\"properties\":{},\"selector\":{\"metadata\":\"Customers - OrderAccount.CustomerName\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Umsatz pro Auftrag'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"SALESLINE\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0},{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0}]",
+          "height": 256.00,
+          "width": 368.00,
+          "x": 360.00,
+          "y": 440.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer12\",\"layouts\":[{\"id\":0,\"position\":{\"x\":760,\"y\":136,\"z\":12000,\"width\":503.99999999999994,\"height\":288}},{\"id\":1,\"position\":{\"x\":0,\"y\":240,\"width\":324,\"height\":180}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Invoicedate.YearMonthShort\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(CUSTINVOICETRANS.Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"YearMonthShort\"},\"Name\":\"Invoicedate.YearMonthShort\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Revenue)\"}]},\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Umsatz pro Monat'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Invoicedate\"}},\"Property\":\"Year\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2014L\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1}]",
+          "height": 288.00,
+          "width": 504.00,
+          "x": 760.00,
+          "y": 136.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":24,\"z\":2000,\"width\":488,\"height\":80}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Umsatz in diesem Monat\",\"textStyle\":{\"fontSize\":\"31.5pt\"}}]}]}}]}}}",
+          "height": 80.00,
+          "width": 488.00,
+          "x": 24.00,
+          "y": 24.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":336,\"y\":136,\"z\":3000,\"width\":400,\"height\":288}},{\"id\":1,\"position\":{\"x\":0,\"y\":420,\"width\":324,\"height\":240}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Customers - OrderAccount.CustomerName\",\"active\":true}],\"Y\":[{\"queryRef\":\"SALESLINE.OpenRevenue\"}],\"Series\":[{\"queryRef\":\"Customers - OrderAccount.CustomerName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerName\"},\"Name\":\"Customers - OrderAccount.CustomerName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"OpenRevenue\"},\"Name\":\"SALESLINE.OpenRevenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"OpenRevenue\"}}}]},\"objects\":{\"general\":[{\"properties\":{},\"selector\":{\"metadata\":\"Customers - OrderAccount.CustomerName\"}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Offener Umsatz pro Kunde'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"SALESLINE\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1},{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 288.00,
+          "width": 400.00,
+          "x": 336.00,
+          "y": 136.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1080,\"y\":16,\"z\":6000,\"width\":168,\"height\":80}},{\"id\":1,\"position\":{\"x\":216,\"y\":120,\"width\":108,\"height\":120}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"SALESLINE.OpenRevenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"OpenRevenue\"},\"Name\":\"SALESLINE.OpenRevenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"OpenRevenue\"}}}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Offen'\"}}}}}]}}}",
+          "height": 80.00,
+          "width": 168.00,
+          "x": 1080.00,
+          "y": 16.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":896,\"y\":16,\"z\":7000,\"width\":168,\"height\":80}},{\"id\":1,\"position\":{\"x\":108,\"y\":120,\"width\":108,\"height\":120}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(SALESLINE.SalesAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0},\"Name\":\"Sum(SALESLINE.SalesAmount)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}}}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Auftragswert'\"}}}}}]}}}",
+          "height": 80.00,
+          "width": 168.00,
+          "x": 896.00,
+          "y": 16.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":704,\"y\":16,\"z\":8000,\"width\":192,\"height\":80}},{\"id\":1,\"position\":{\"x\":0,\"y\":120,\"width\":108,\"height\":120}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(CUSTINVOICETRANS.Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Revenue)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}}}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Fakturiert'\"}}}}}]}}}",
+          "height": 80.00,
+          "width": 192.00,
+          "x": 704.00,
+          "y": 16.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":344,\"z\":9000,\"width\":264,\"height\":144}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Company\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Company\"},\"Name\":\"CUSTINVOICETRANS.Company\"}]},\"objects\":{\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}}}",
+          "height": 144.00,
+          "width": 264.00,
+          "x": 24.00,
+          "y": 344.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":608,\"z\":10000,\"width\":272,\"height\":96}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DEFAULTDIMENSIONS.Department\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department\"},\"Name\":\"DEFAULTDIMENSIONS.Department\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "height": 96.00,
+          "width": 272.00,
+          "x": 24.00,
+          "y": 608.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":520,\"z\":11000,\"width\":272,\"height\":80}},{\"id\":1,\"position\":{\"x\":0,\"y\":0,\"width\":324,\"height\":120}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DEFAULTDIMENSIONS.BusinessUnit\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BusinessUnit\"},\"Name\":\"DEFAULTDIMENSIONS.BusinessUnit\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "height": 80.00,
+          "width": 272.00,
+          "x": 24.00,
+          "y": 520.00,
+          "z": 11000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Offene Auftraege",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection6",
+      "ordinal": 9,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":19.246658566221143,\"y\":21.87120291616039,\"z\":0,\"width\":343.81530984204136,\"height\":80.48602673147023}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Neue Aufträge\",\"textStyle\":{\"fontSize\":\"31.5pt\"}}]}]}}]}}}",
+          "height": 80.49,
+          "width": 343.82,
+          "x": 19.25,
+          "y": 21.87,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":376,\"y\":536,\"z\":1000,\"width\":904,\"height\":184}},{\"id\":1,\"position\":{\"x\":0,\"y\":780,\"width\":324,\"height\":360}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"SalesOrderHeaders.SalesOrderNumber\"},{\"queryRef\":\"SalesOrderHeaders.OrderingCustomerAccountNumber\"},{\"queryRef\":\"SalesOrderHeaders.SalesOrderName\"},{\"queryRef\":\"Sum(SALESLINE.SALESTYPE)\"},{\"queryRef\":\"SALESLINE.CREATEDDATETIME\"},{\"queryRef\":\"SalesOrderHeaders.SalesOrderStatus\"},{\"queryRef\":\"Sum(SALESLINE.SalesAmount)\"},{\"queryRef\":\"SalesOrderHeaders.CreatedSince\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SalesOrderHeaders\",\"Type\":0},{\"Name\":\"s1\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesOrderNumber\"},\"Name\":\"SalesOrderHeaders.SalesOrderNumber\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesOrderStatus\"},\"Name\":\"SalesOrderHeaders.SalesOrderStatus\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"OrderingCustomerAccountNumber\"},\"Name\":\"SalesOrderHeaders.OrderingCustomerAccountNumber\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesOrderName\"},\"Name\":\"SalesOrderHeaders.SalesOrderName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"CREATEDDATETIME\"}},\"Function\":3},\"Name\":\"SALESLINE.CREATEDDATETIME\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"SalesAmount\"}},\"Function\":0},\"Name\":\"Sum(SALESLINE.SalesAmount)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"SALESTYPE\"}},\"Function\":0},\"Name\":\"Sum(SALESLINE.SALESTYPE)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"AvgDaysOpen\"},\"Name\":\"SalesOrderHeaders.CreatedSince\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}}}]},\"objects\":{\"general\":[{\"properties\":{},\"selector\":{\"metadata\":\"SalesOrderHeaders.SalesOrderName\"}},{\"properties\":{},\"selector\":{\"metadata\":\"SalesOrderHeaders.OrderingCustomerAccountNumber\"}},{\"properties\":{},\"selector\":{\"metadata\":\"SALESLINE.CREATEDDATETIME\"}}]}}}",
+          "height": 184.00,
+          "width": 904.00,
+          "x": 376.00,
+          "y": 536.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1112,\"y\":16,\"z\":10000,\"width\":160,\"height\":72}},{\"id\":1,\"position\":{\"x\":216,\"y\":120,\"width\":108,\"height\":120}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"SalesOrderHeaders.DaysOpen\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SalesOrderHeaders\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"AvgDaysOpen\"},\"Name\":\"SalesOrderHeaders.DaysOpen\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"AvgDaysOpen\"}}}]},\"objects\":{\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tage offen'\"}}}}}]}}}",
+          "height": 72.00,
+          "width": 160.00,
+          "x": 1112.00,
+          "y": 16.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer11\",\"layouts\":[{\"id\":0,\"position\":{\"x\":760,\"y\":16,\"z\":11000,\"width\":176,\"height\":72}},{\"id\":1,\"position\":{\"x\":0,\"y\":120,\"width\":108,\"height\":120}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(SALESLINE.SALESID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SALESID\"}},\"Function\":2},\"Name\":\"Min(SALESLINE.SALESID)\"}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Offene Aufträge'\"}}}}}]}}}",
+          "height": 72.00,
+          "width": 176.00,
+          "x": 760.00,
+          "y": 16.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer12\",\"layouts\":[{\"id\":0,\"position\":{\"x\":376,\"y\":72,\"z\":12000,\"width\":888,\"height\":144}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Count(SALESLINE.SALESID)\"}],\"Category\":[{\"queryRef\":\"SALESLINE.CreatedWeek\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SALESID\"}},\"Function\":2},\"Name\":\"Count(SALESLINE.SALESID)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"CreatedWeek\"},\"Name\":\"SALESLINE.CreatedWeek\"}]},\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Neue Aufträge pro Woche'\"}}}}}]}}}",
+          "height": 144.00,
+          "width": 888.00,
+          "x": 376.00,
+          "y": 72.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":288,\"z\":4000,\"width\":272,\"height\":88}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"SalesOrderHeaders.SalesOrderStatus\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SalesOrderHeaders\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesOrderStatus\"},\"Name\":\"SalesOrderHeaders.SalesOrderStatus\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SalesOrderHeaders\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesOrderStatus\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Backorder'\"}}]]}}}]}}}}]}}}",
+          "height": 88.00,
+          "width": 272.00,
+          "x": 24.00,
+          "y": 288.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":784,\"y\":224,\"z\":2000,\"width\":480,\"height\":304}},{\"id\":1,\"position\":{\"x\":0,\"y\":480,\"width\":324,\"height\":300}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"Sum(SALESLINE.SalesAmount)\"}],\"Category\":[{\"queryRef\":\"Customers - OrderAccount.Location Hierarchy.Country\"},{\"queryRef\":\"Customers - OrderAccount.Location Hierarchy.CityCountry\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.Location Hierarchy.ZipCodeCountry\"}],\"Series\":[{\"queryRef\":\"Customers - OrderAccount.Location Hierarchy.Country\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0},\"Name\":\"Sum(SALESLINE.SalesAmount)\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Hierarchy\":\"Location Hierarchy\"}},\"Level\":\"Country\"},\"Name\":\"Customers - OrderAccount.Location Hierarchy.Country\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Hierarchy\":\"Location Hierarchy\"}},\"Level\":\"CityCountry\"},\"Name\":\"Customers - OrderAccount.Location Hierarchy.CityCountry\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Hierarchy\":\"Location Hierarchy\"}},\"Level\":\"ZipCodeCountry\"},\"Name\":\"Customers - OrderAccount.Location Hierarchy.ZipCodeCountry\"}]},\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Offene Aufträge nach Gebiet und Auftragswert'\"}}}}}]}}}",
+          "height": 304.00,
+          "width": 480.00,
+          "x": 784.00,
+          "y": 224.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":168,\"z\":5000,\"width\":272,\"height\":104}},{\"id\":1,\"position\":{\"x\":0,\"y\":0,\"width\":324,\"height\":120}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"SALESLINE.CREATEDDATETIME.Variation.Date Hierarchy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"CREATEDDATETIME\"},\"Name\":\"SALESLINE.CREATEDDATETIME.Variation.Date Hierarchy.Year\"}]},\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2015-03-11T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'After'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"CREATEDDATETIME\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2015-03-11T00:00:00'\"}}}}}]}}}}]}}}",
+          "height": 104.00,
+          "width": 272.00,
+          "x": 24.00,
+          "y": 168.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":376,\"z\":7000,\"width\":264,\"height\":136}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"SALESLINE.DATAAREAID\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"DATAAREAID\"},\"Name\":\"SALESLINE.DATAAREAID\"}]},\"objects\":{\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}}}",
+          "height": 136.00,
+          "width": 264.00,
+          "x": 24.00,
+          "y": 376.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":536,\"z\":9000,\"width\":272,\"height\":80}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DEFAULTDIMENSIONS.BusinessUnit\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BusinessUnit\"},\"Name\":\"DEFAULTDIMENSIONS.BusinessUnit\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "height": 80.00,
+          "width": 272.00,
+          "x": 24.00,
+          "y": 536.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":624,\"z\":8000,\"width\":272,\"height\":80}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DEFAULTDIMENSIONS.Department\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEFAULTDIMENSIONS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department\"},\"Name\":\"DEFAULTDIMENSIONS.Department\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "height": 80.00,
+          "width": 272.00,
+          "x": 24.00,
+          "y": 624.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":935.9999999999999,\"y\":16,\"z\":6000,\"width\":168,\"height\":72}},{\"id\":1,\"position\":{\"x\":108,\"y\":120,\"width\":108,\"height\":120}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(SALESLINE.SalesAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0},\"Name\":\"Sum(SALESLINE.SalesAmount)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}}}]},\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Auftragswert'\"}}}}}]}}}",
+          "height": 72.00,
+          "width": 168.00,
+          "x": 936.00,
+          "y": 16.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368,\"y\":248.00000000000003,\"z\":3000,\"width\":408,\"height\":280}},{\"id\":1,\"position\":{\"x\":0,\"y\":240,\"width\":324,\"height\":240}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Customers - OrderAccount.CustomerName\",\"active\":true}],\"Series\":[{\"queryRef\":\"Customers - OrderAccount.CustomerName\"}],\"Y\":[{\"queryRef\":\"Sum(SALESLINE.SalesAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerName\"},\"Name\":\"Customers - OrderAccount.CustomerName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0},\"Name\":\"Sum(SALESLINE.SalesAmount)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}}}]},\"objects\":{\"general\":[{\"properties\":{},\"selector\":{\"metadata\":\"Customers - OrderAccount.CustomerName\"}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top Kunden nach Auftragswert'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"SALESLINE\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SALESLINE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0},{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 280.00,
+          "width": 408.00,
+          "x": 368.00,
+          "y": 248.00,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Produktanalyse",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection7",
+      "ordinal": 10,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":62.78481012658228,\"y\":388.86075949367086,\"z\":0,\"width\":467.8481012658228,\"height\":248.1012658227848}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.ITEMID\"},{\"queryRef\":\"CUSTINVOICETRANS.CURRENCYCODE\"},{\"queryRef\":\"Sum(CUSTINVOICETRANS.Revenue)\"},{\"queryRef\":\"Sum(InventTransGrouped.COGS)\"},{\"queryRef\":\"CUSTINVOICETRANS.GrossProfit\"},{\"queryRef\":\"CUSTINVOICEJOUR.GrossProfit %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"i\",\"Entity\":\"InventTransGrouped\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ITEMID\"},\"Name\":\"CUSTINVOICETRANS.ITEMID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Revenue)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"COGS\"}},\"Function\":0},\"Name\":\"Sum(InventTransGrouped.COGS)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CURRENCYCODE\"},\"Name\":\"CUSTINVOICETRANS.CURRENCYCODE\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"GrossProfit\"},\"Name\":\"CUSTINVOICETRANS.GrossProfit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"GrossProfit %\"},\"Name\":\"CUSTINVOICEJOUR.GrossProfit %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ITEMID\"}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"ITEMID\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ITEMID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"''\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0},{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"CURRENCYCODE\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CURRENCYCODE\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'USD'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0}]",
+          "height": 248.10,
+          "width": 467.85,
+          "x": 62.78,
+          "y": 388.86,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":58.873909595559084,\"y\":18.271213322759717,\"z\":1000,\"width\":477.08168120539256,\"height\":315.6859635210151}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"Customers - OrderAccount.StateCountry\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.CityCountry\"},{\"queryRef\":\"Customers - OrderAccount.ZipCodeCountry\"}],\"Size\":[{\"queryRef\":\"Sum(CUSTINVOICETRANS.Revenue)\"}],\"Series\":[{\"queryRef\":\"CUSTINVOICETRANS.ITEMID\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"c2\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"ZipCodeCountry\"},\"Name\":\"Customers - OrderAccount.ZipCodeCountry\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"StateCountry\"},\"Name\":\"Customers - OrderAccount.StateCountry\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CityCountry\"},\"Name\":\"Customers - OrderAccount.CityCountry\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Revenue)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"ITEMID\"},\"Name\":\"CUSTINVOICETRANS.ITEMID\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ccf1ee'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"CURRENCYCODE\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CURRENCYCODE\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'USD'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1},{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"ITEMID\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"c2\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"ITEMID\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"QTY\"}},\"Function\":0}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"c2\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"ITEMID\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0}]",
+          "height": 315.69,
+          "width": 477.08,
+          "x": 58.87,
+          "y": 18.27,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1089.241622574956,\"y\":0,\"z\":2000,\"width\":190.75837742504407,\"height\":72.23985890652557}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICEJOUR.DATAAREAID\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICEJOUR\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATAAREAID\"},\"Name\":\"CUSTINVOICEJOUR.DATAAREAID\"}]},\"objects\":{\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICEJOUR\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATAAREAID\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'usmf'\"}}]]}}}]}}}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "height": 72.24,
+          "width": 190.76,
+          "x": 1089.24,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":928.9594356261023,\"y\":0,\"z\":3000,\"width\":151.25220458553792,\"height\":82.39858906525573}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.GrossProfit %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"GrossProfit %\"},\"Name\":\"CUSTINVOICETRANS.GrossProfit %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"GrossProfit %\"}}}]}}}",
+          "height": 82.40,
+          "width": 151.25,
+          "x": 928.96,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":792.3809523809523,\"y\":0,\"z\":4000,\"width\":144.47971781305114,\"height\":79.01234567901234}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(CUSTINVOICETRANS.Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Revenue)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0}}}]}}}",
+          "height": 79.01,
+          "width": 144.48,
+          "x": 792.38,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":617.1609833465504,\"y\":410.0872323552736,\"z\":5000,\"width\":543.0610626486915,\"height\":309.5955590800952}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"ReleasedDistinctProducts.ProductGroupId\",\"active\":true}],\"Series\":[{\"queryRef\":\"ReleasedDistinctProducts.ItemNumber\"}],\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.GrossProfit %\"}],\"Play\":[{\"queryRef\":\"Invoicedate.MonthNameShort\"}],\"X\":[{\"queryRef\":\"Sum(CUSTINVOICETRANS.Revenue)\",\"active\":true}],\"Size\":[{\"queryRef\":\"CUSTINVOICETRANS.CumulGrossProfit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"r\",\"Entity\":\"ReleasedDistinctProducts\",\"Type\":0},{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"ProductGroupId\"},\"Name\":\"ReleasedDistinctProducts.ProductGroupId\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"ItemNumber\"},\"Name\":\"ReleasedDistinctProducts.ItemNumber\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"GrossProfit %\"},\"Name\":\"CUSTINVOICETRANS.GrossProfit %\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"MonthNameShort\"},\"Name\":\"Invoicedate.MonthNameShort\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"LINEAMOUNTMST\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.Revenue)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CumulGrossProfit\"},\"Name\":\"CUSTINVOICETRANS.CumulGrossProfit\"}]},\"objects\":{\"categoryAxis\":[{\"properties\":{}}],\"valueAxis\":[{\"properties\":{\"start\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"end\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "height": 309.60,
+          "width": 543.06,
+          "x": 617.16,
+          "y": 410.09,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":617.7215189873417,\"y\":118.48101265822784,\"z\":6000,\"width\":576.2025316455696,\"height\":261.2658227848101}}],\"singleVisual\":{\"visualType\":\"waterfallChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Invoicedate.MonthNameShort\",\"active\":true}],\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.GrossProfit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"MonthNameShort\"},\"Name\":\"Invoicedate.MonthNameShort\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"GrossProfit\"},\"Name\":\"CUSTINVOICETRANS.GrossProfit\"}]}}}",
+          "height": 261.27,
+          "width": 576.20,
+          "x": 617.72,
+          "y": 118.48,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1093.6708860759493,\"y\":74.9367088607595,\"z\":7000,\"width\":186.32911392405063,\"height\":71.89873417721519}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Invoicedate.Date.Variation.Date Hierarchy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Date\"},\"Name\":\"Invoicedate.Date.Variation.Date Hierarchy.Year\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_53610f9b-6fc6-4056-8adb-fff43862289d\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2012L\"}}],[{\"Literal\":{\"Value\":\"2014L\"}}],[{\"Literal\":{\"Value\":\"2016L\"}}],[{\"Literal\":{\"Value\":\"2017L\"}}],[{\"Literal\":{\"Value\":\"2018L\"}}],[{\"Literal\":{\"Value\":\"2013L\"}}]]}}}}}]}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 71.90,
+          "width": 186.33,
+          "x": 1093.67,
+          "y": 74.94,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Umsatzanalyse - Kunde YTD",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection8",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"VisualContainer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":537.1567436208992,\"height\":83.9854191980559}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"UMSATZANALYSE / Kunde\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"30pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 83.99,
+          "width": 537.16,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1104,\"y\":8,\"z\":1000,\"width\":176,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"},\"Name\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"}}}]}}}",
+          "height": 80.00,
+          "width": 176.00,
+          "x": 1104.00,
+          "y": 8.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.87120291616039,\"y\":224.8359659781288,\"z\":3000,\"width\":199.46537059538275,\"height\":80.48602673147023}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CustomerGroups\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 80.49,
+          "width": 199.47,
+          "x": 21.87,
+          "y": 224.84,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":944.0000000000001,\"y\":8,\"z\":4000,\"width\":144,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"}}}]}}}",
+          "height": 80.00,
+          "width": 144.00,
+          "x": 944.00,
+          "y": 8.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":768,\"y\":8,\"z\":2000,\"width\":160,\"height\":80}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Anzahl Aufträge\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Anzahl Aufträge\"},\"Name\":\"CUSTINVOICETRANS.Anzahl Aufträge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Anzahl Aufträge\"}}}]}}}",
+          "height": 80.00,
+          "width": 160.00,
+          "x": 768.00,
+          "y": 8.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.121506682867558,\"y\":114.60510328068044,\"z\":5000,\"width\":202.089914945322,\"height\":83.9854191980559}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Company\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Company\"},\"Name\":\"CUSTINVOICETRANS.Company\"}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 83.99,
+          "width": 202.09,
+          "x": 20.12,
+          "y": 114.61,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":320,\"z\":6000,\"width\":200,\"height\":96}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Invoicedate.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"},\"Name\":\"Invoicedate.Year\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"}}}]},\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"Invoicedate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2015L\"}}]]}}}]}}}}]}}}",
+          "height": 96.00,
+          "width": 200.00,
+          "x": 24.00,
+          "y": 320.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":232,\"y\":376,\"z\":7000,\"width\":1048,\"height\":344}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz LY\"},{\"queryRef\":\"CUSTINVOICETRANS.QTY LY\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatz/Auftrag LY\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatz\"},{\"queryRef\":\"Sum(CUSTINVOICETRANS.QTY)\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatzsteigerung\"},{\"queryRef\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"},{\"queryRef\":\"CUSTINVOICETRANS.Auftragswertveränderung %\"}],\"Rows\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.CustomerName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"CustomerGroups\",\"Type\":0},{\"Name\":\"c2\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Umsatz\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"QTY\"}},\"Function\":0},\"Name\":\"Sum(CUSTINVOICETRANS.QTY)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"CustomerName\"},\"Name\":\"Customers - OrderAccount.CustomerName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag\"},\"Name\":\"CUSTINVOICETRANS.Umsatz/Auftrag\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz LY\"},\"Name\":\"CUSTINVOICETRANS.Umsatz LY\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"QTY LY\"},\"Name\":\"CUSTINVOICETRANS.QTY LY\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatz/Auftrag LY\"},\"Name\":\"CUSTINVOICETRANS.Umsatz/Auftrag LY\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung\"},\"Name\":\"CUSTINVOICETRANS.Umsatzsteigerung\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Auftragswertveränderung %\"},\"Name\":\"CUSTINVOICETRANS.Auftragswertveränderung %\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung %\"},\"Name\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerGroup\"}}}]},\"objects\":{\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Umsatzsteigerung\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CUSTINVOICETRANS.Umsatzsteigerung\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Auftragswertveränderung\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CUSTINVOICETRANS.Auftragswertveränderung\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Auftragswertveränderung %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CUSTINVOICETRANS.Auftragswertveränderung %\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}}],\"rowTotal\":[{\"properties\":{\"applyToHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnTotal\":[{\"properties\":{\"applyToHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 344.00,
+          "width": 1048.00,
+          "x": 232.00,
+          "y": 376.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":240,\"y\":120,\"z\":8000,\"width\":576,\"height\":232}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}],\"Category\":[{\"queryRef\":\"CustomerGroups.CustomerGroup\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.CustomerName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"CustomerGroups\",\"Type\":0},{\"Name\":\"c2\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Umsatzsteigerung %\"},\"Name\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerGroup\"},\"Name\":\"CustomerGroups.CustomerGroup\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"CustomerName\"},\"Name\":\"Customers - OrderAccount.CustomerName\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"CustomerGroup\"}}}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"Umsatzsteigerung %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}},\"value\":{\"Literal\":{\"Value\":\"1D\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Median'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}},\"Function\":6}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}}},\"selector\":{\"metadata\":\"CUSTINVOICETRANS.Umsatzsteigerung %\",\"id\":\"1\"}}],\"y1AxisReferenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Ziel'\"}}},\"value\":{\"expr\":{\"Literal\":{\"Value\":\"0.1D\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C80F'\"}}}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}},\"dataLabelColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2C80F'\"}}}}}},\"selector\":{\"id\":\"1\"}}]}}}",
+          "height": 232.00,
+          "width": 576.00,
+          "x": 240.00,
+          "y": 120.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"VisualContainer9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":840,\"y\":104,\"z\":9000,\"width\":432,\"height\":264}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"Customers - OrderAccount.Country\",\"active\":true},{\"queryRef\":\"Customers - OrderAccount.StateCountry\"},{\"queryRef\":\"Customers - OrderAccount.CityCountry\"},{\"queryRef\":\"Customers - OrderAccount.ZipCodeCountry\"}],\"Size\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatz\"}],\"Tooltips\":[{\"queryRef\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customers - OrderAccount\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"CUSTINVOICETRANS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CityCountry\"},\"Name\":\"Customers - OrderAccount.CityCountry\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Country\"},\"Name\":\"Customers - OrderAccount.Country\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"StateCountry\"},\"Name\":\"Customers - OrderAccount.StateCountry\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ZipCodeCountry\"},\"Name\":\"Customers - OrderAccount.ZipCodeCountry\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Umsatz\"},\"Name\":\"CUSTINVOICETRANS.Umsatz\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Umsatzsteigerung %\"},\"Name\":\"CUSTINVOICETRANS.Umsatzsteigerung %\"}]},\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CUSTINVOICETRANS\"}},\"Property\":\"Umsatzsteigerung %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FD625E'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#ffffff'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#01B8AA'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"mapControls\":[{\"properties\":{\"autoZoom\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 264.00,
+          "width": 432.00,
+          "x": 840.00,
+          "y": 104.00,
+          "z": 9000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

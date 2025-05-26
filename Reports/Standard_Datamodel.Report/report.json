@@ -1,0 +1,99 @@
+{
+  "config": "{\"version\":\"5.44\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU04\",\"version\":\"5.46\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU04",
+            "path": "BaseThemes/CY23SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"ab4583d2cd68038e4331\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.00685941948639,\"y\":290.1989231651053,\"z\":2000,\"width\":644.2877949315468,\"height\":388.7280005262021,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"reporting FACT_Quotation.ArticleFK\"},{\"queryRef\":\"reporting FACT_Quotation.CompanyFK\"},{\"queryRef\":\"reporting FACT_Quotation.CustomerFK\"},{\"queryRef\":\"reporting FACT_Quotation.DateId\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"FACT_Quotation\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"ArticleFK\"},\"Name\":\"reporting FACT_Quotation.ArticleFK\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"CompanyFK\"},\"Name\":\"reporting FACT_Quotation.CompanyFK\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"CustomerFK\"},\"Name\":\"reporting FACT_Quotation.CustomerFK\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DateId\"},\"Name\":\"reporting FACT_Quotation.DateId\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 388.73,
+          "width": 644.29,
+          "x": 10.01,
+          "y": 290.20,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"c1e3a2d870891981ab84\",\"layouts\":[{\"id\":0,\"position\":{\"x\":844.4535743631882,\"y\":0,\"width\":280,\"height\":280,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(reporting DIM_Customer.CustDbKey)\"},{\"queryRef\":\"reporting DIM_Customer.CustDbKey\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"DIM_Customer\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"CustDbKey\"},\"Name\":\"reporting DIM_Customer.CustDbKey\",\"NativeReferenceName\":\"CustDbKey\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"CustDbKey\"}},\"Function\":5},\"Name\":\"CountNonNull(reporting DIM_Customer.CustDbKey)\",\"NativeReferenceName\":\"Count of CustDbKey\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"CustDbKey\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 844.45,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"cc645a273ca2e162d915\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"reporting DIM_Company.DataAreaID\"},{\"queryRef\":\"reporting DIM_Company.DataAreaID1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"DIM_Company\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DataAreaID\"}},\"Function\":5},\"Name\":\"reporting DIM_Company.DataAreaID\",\"NativeReferenceName\":\"Count of DataAreaID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DataAreaID\"},\"Name\":\"reporting DIM_Company.DataAreaID1\",\"NativeReferenceName\":\"DataAreaID\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "SalesOrder",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection5389118089bed1a2c73e",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"013c51a90aaa46620144\",\"layouts\":[{\"id\":0,\"position\":{\"x\":22.443607878154456,\"y\":227.76105772645636,\"z\":0,\"width\":1118.0241702265832,\"height\":492.09688384694215,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"reporting FACT_SalesOrder.DateId\"},{\"queryRef\":\"reporting FACT_SalesOrder.OrderId\"},{\"queryRef\":\"reporting FACT_SalesOrder.OrderNumber\"},{\"queryRef\":\"Sum(reporting FACT_SalesOrder.SalesOrderStatus)\"},{\"queryRef\":\"Sum(reporting FACT_SalesOrder.SalesPrice)\"},{\"queryRef\":\"reporting DIM_Article.ArticleName\"},{\"queryRef\":\"reporting DIM_Article.ArticleNumber\"},{\"queryRef\":\"reporting DIM_Article.ItemGroup\"},{\"queryRef\":\"Sum(reporting FACT_SalesOrder.LineNum)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"FACT_SalesOrder\",\"Type\":0},{\"Name\":\"r1\",\"Entity\":\"DIM_Article\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DateId\"},\"Name\":\"reporting FACT_SalesOrder.DateId\",\"NativeReferenceName\":\"DateId\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"OrderId\"},\"Name\":\"reporting FACT_SalesOrder.OrderId\",\"NativeReferenceName\":\"OrderId\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"OrderNumber\"},\"Name\":\"reporting FACT_SalesOrder.OrderNumber\",\"NativeReferenceName\":\"OrderNumber\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"SalesOrderStatus\"},\"Name\":\"Sum(reporting FACT_SalesOrder.SalesOrderStatus)\",\"NativeReferenceName\":\"SalesOrderStatus\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"SalesPrice\"}},\"Function\":0},\"Name\":\"Sum(reporting FACT_SalesOrder.SalesPrice)\",\"NativeReferenceName\":\"Summe von SalesPrice\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r1\"}},\"Property\":\"ArticleName\"},\"Name\":\"reporting DIM_Article.ArticleName\",\"NativeReferenceName\":\"ArticleName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r1\"}},\"Property\":\"ArticleNumber\"},\"Name\":\"reporting DIM_Article.ArticleNumber\",\"NativeReferenceName\":\"ArticleNumber\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r1\"}},\"Property\":\"ItemGroup\"},\"Name\":\"reporting DIM_Article.ItemGroup\",\"NativeReferenceName\":\"ItemGroup\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"LineNum\"},\"Name\":\"Sum(reporting FACT_SalesOrder.LineNum)\",\"NativeReferenceName\":\"LineNum\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 492.10,
+          "width": 1118.02,
+          "x": 22.44,
+          "y": 227.76,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"90a693805a5b88030b82\",\"layouts\":[{\"id\":0,\"position\":{\"x\":326.67918133758155,\"y\":0,\"z\":2000,\"width\":281.7919655812726,\"height\":196.1737577497945,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 196.17,
+          "width": 281.79,
+          "x": 326.68,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"ff739c03dd334e5c4006\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.612363141926515,\"y\":0,\"z\":1000,\"width\":265.9983155929417,\"height\":196.1737577497945,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"reporting DIM_Company.Company\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"DIM_Company\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Company\"},\"Name\":\"reporting DIM_Company.Company\",\"NativeReferenceName\":\"Company\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 196.17,
+          "width": 266.00,
+          "x": 21.61,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
